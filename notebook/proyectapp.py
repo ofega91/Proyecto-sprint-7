@@ -7,7 +7,19 @@ df = pd.read_csv(r"C:\Codigo\Proyecto Sprint 7\Proyecto-sprint-7\vehicles_us.csv
 # Info general
 print("Shape:", df.shape)
 
-st.header("Información del Dataset")
+st.header("Visualización de Datos: Anuncios de Coches en EE.UU.")
+
+st.write(
+    """
+    Esta aplicación web te permite explorar un conjunto de datos de anuncios de venta de vehículos en Estados Unidos.  
+    Aquí podrás:  
+    - Visualizar histogramas del kilometraje y precios.  
+    - Construir gráficos de dispersión para analizar la relación entre variables.  
+    - Detectar tendencias y patrones en los datos.  
+
+    Usa los botones de abajo para generar las visualizaciones de manera interactiva.
+    """
+)
 
 # Valores nulos y duplicados
 print("Valores nulos:\n", df.isna().sum())
